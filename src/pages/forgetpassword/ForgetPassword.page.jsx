@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Oauth from "../../components/oauth/Oauth.component";
+import Oauth from "../../components/oauth/OAuth";
 const ForgetPassword = () => {
 	const [formData, setformData] = useState({
 		email: "",
@@ -50,7 +50,7 @@ const ForgetPassword = () => {
 									className='text-blue-600 hover:text-blue-800 transition duration-200 ease-in-out'
 									to='/sign-in'
 								>
-									Go to LogIn
+									Go to Login
 								</Link>
 							</p>
 						</div>

@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router";
+import { ToastContainer } from "react-toastify";
 import Header from "./components/header/Header.component";
 import ForgetPassword from "./pages/forgetpassword/ForgetPassword.page";
 import Home from "./pages/home/Home.page";
@@ -6,6 +7,7 @@ import Offer from "./pages/offers/Offer.page";
 import Profile from "./pages/profile/Profile.page";
 import SignIn from "./pages/signin/SignIn.page";
 import SignUp from "./pages/signup/SignUp.page";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
 	return (
@@ -19,6 +21,18 @@ function App() {
 				<Route path='/offers' element={<Offer />} />
 				<Route path='/forget-password' element={<ForgetPassword />} />
 			</Routes>
+			<ToastContainer
+				position='top-center'
+				autoClose={2000}
+				hideProgressBar={false}
+				newestOnTop={false}
+				closeOnClick
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover
+				theme='dark'
+			/>
 		</>
 	);
 }
